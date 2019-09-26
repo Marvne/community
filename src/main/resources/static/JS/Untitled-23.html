@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function person(name,age,id)
+{
+    this.name=name;
+    this.age=age;
+    this.id=id;
+    this.changeName=changeName;
+    function changeName(lastname)
+    {
+        this.name = lastname;
+    }
+
+}
+myfriend=new person("xd","26","17020100006");
+myfriend.changeName("yzp")
+document.write(myfriend.name + "is" + myfriend.age + "学号：" + myfriend.id)
+</script>
+</body>
+</html>

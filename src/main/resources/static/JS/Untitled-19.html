@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+请输入英文字符：<input type="text" id="demo" onchange="Myfunction()">
+<p>离开时，会触发输入文本的改变</p>
+<script>
+function Myfunction()
+{
+var x = document.getElementById("demo")
+x.value=x.value.toUpperCase();
+}
+
+</script>
+
+
+</body>
+</html>

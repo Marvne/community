@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>假设x=5,y=x+2，计算y，并显示结果</p>
+    <p id="demo">
+    </p>
+    <button type="button" onclick="Myfunction()">
+        点击这里
+    </button>
+    <script>
+    function Myfunction()
+    {
+    var x = 5;
+    var y = x+2
+    var z=document.getElementById("demo")
+    z.innerHTML="y=" + y
+    }
+    </script>
+</body>
+</html>

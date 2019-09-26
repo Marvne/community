@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+
+    </p>
+    <button type="button" onclick="Myfunction()">
+        点击这里
+    </button>
+<script>
+    function Myfunction()
+    {
+        var x = "";
+        var time = new Date().getHours();
+        if (time < 20)
+        {
+        x = "good day"
+        }
+        else if (time<10) {
+            x="good mornig"
+        }
+        else
+        {
+           x="good evening"
+        }
+        document.getElementById("demo").innerHTML=x
+    }
+
+
+</script>
+</body>
+</html>

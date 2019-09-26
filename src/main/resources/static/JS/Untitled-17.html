@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Hello world</p>
+<div id="main">
+<p>最喜欢的是你</p>
+<p>然后在离开你</p>
+</div>
+<script>
+var x= document.getElementById("main");
+var y= x.getElementsByTagName("p");
+document.write("id为main中的第一段文本是" + y[0].innerHTML);//innerHTML获取对象内容
+</script>
+</body>
+</html>

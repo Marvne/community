@@ -1,0 +1,29 @@
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+    <p>
+        请输入数字，如果不是，会弹出提示框
+    </p>
+    <input id="demo" type="text">
+    <script>
+        function Myfunction()
+        {
+            var x=document.getElementById("demo").value// 不可删除
+            if(x==""||isNaN(x))
+            {
+                alert("Not Numeric")
+            }
+        }
+    </script>
+    <button type="button" onclick="Myfunction()">
+        
+        点击这里
+    </button>
+    </body>
+    </html>

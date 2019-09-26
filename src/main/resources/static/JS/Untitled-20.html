@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color: green;
+width: 120px; height: 20px;padding: 40px;color:hotpink; ">抱住他</div>
+<script>
+function mdown(obj)
+{
+obj.style.backgroundColor="#lex5e5";
+obj.innerHTML="放开她"
+}
+function mup(obj)
+{
+    obj.style.backgroundColor="green";
+    obj.innerHTML="抱住他"
+}
+</script>
+</body>
+</html>

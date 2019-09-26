@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="demo">
+<p id="p1">我爱过你</p>
+<p id="p2">我也拥有过你</p>
+</div>
+<script>
+var para=document.createElement("p");
+var node=document.createTextNode("可还是失去你了");
+para.append(node);
+
+var element=document.getElementById("demo")
+element.appendChild(para);
+</script>
+</body>
+</html> 

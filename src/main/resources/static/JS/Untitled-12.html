@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>显示今天是不是周六或者周日</p>
+    <p id="demo"></p>
+    <button type="button" onclick="Myfunction()">点击这里来看</button>
+<script>
+    function Myfunction(){
+    x=""
+    d = new Date().getDay()
+    switch(d)
+    {
+        case(6):
+        x="6666666"
+        break
+        case(0):
+        x="7777"
+        break
+        default:
+        x="waitting"
+        document.getElementById("demo").innerHTML=x
+        
+        
+    }
+}
+</script>
+</body>
+</html>
